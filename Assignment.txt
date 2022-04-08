@@ -1,0 +1,95 @@
+DOM Basics Exercise...
+A. Inside the “DOM” folder create a Folder called “DOMBasicsExercise”
+B. Inside the “DOMBasicsExercise” folder create a index.html file
+C. Inside the “DOMBasicsExercise” folder create a style.css file
+D. Inside the “DOMBasicsExercise” folder create an app.js file
+E. Inside the index.html file create the HTML boilerplate and set the title of the page to “DOM Basics Exercise”
+F. Link the style.css and app.js files to the index.html file
+
+G. Paste the following HTML into your index.html file after the opening body tag…
+  <h1 class="center">Great Animated Superhero Shows</h1>
+
+  <div id="batman">
+    <h2>Batman: The Animated Series</h2>
+    <h3>Ran from 1992 - 1995</h3>
+  </div>
+
+  <div id="x-men">
+    <h2>X-Men</h2>
+    <h3>Ran from 1992 - 1997</h3>
+  </div>
+
+  <div id="spider-man">
+    <h2>Spider-Man</h2>
+    <h3>Ran from 1994 - 1996</h3>
+  </div>
+
+  <div id="justice-league">
+    <h2>Justice League</h2>
+    <h3>Ran from 2001 - 2004</h3>
+  </div>
+
+  <div id="avengers">
+    <h2>Avengers: Earth's Mightiest Heroes</h2>
+    <h3>Ran from 2010 - 2013</h3>
+  </div>
+
+  <div id="honorable-mentions">
+    <h3 class="center">Honorable Mentions</h3>
+  </div>
+
+  <ul>
+    <li>Superman</li>
+    <li>Teenage Mutant Ninja Turtles</li>
+    <li>He-Man and the Masters of the Universe</li>
+    <li>Static Shock</li>
+  </ul>
+
+  <a href="https://screenrant.com/best-animated-superhero-comic-book-shows-ever/">The Best Animated Superhero TV Shows Ever</a>
+
+H. Paste the following CSS into your empty style.css file…
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.background {
+  background-color: cornflowerblue;
+}
+
+.text-color {
+  color: rebeccapurple;
+}
+I. Start your Live Server (NOTE: Must be in the index.html file do to this)
+
+J. Open your app.js file and complete the following...
+1. Using getElementById, select the div with the info for X-Men inside of it and set it to a const variable called xMen.
+2. Using getElementsByClassName, select all the elements with the class of "center" and set them to a const variable called centered
+3. Using querySelector, select the first div with the info for Batman: The Animated Series inside of it and set it to a const variable called batman.
+4. Using querySelectorAll, select all the h3 elements and set them to a const variable called h3s
+5a. Select the h1 (You can use whichever selector you want) and set it to a const variable called h1.
+5b. Use inner text to change the text to say "The Best Animated Superhero TV Shows Ever!"
+6a. Select the div with the id of "honorable-mentions" and set it to a const variable called honorableMentions.
+6b. Use innerHTML to change the HTML to a p (AKA Paragraph) element with the text of "OTHER GREAT SHOWS" inside of it (NOTE: Do NOT include the "center" class)
+7a. Select the a tag at the bottom of the HTML file and set it to a const variable called aTag.
+7b. Change the href attribute to the following link "https://fandomwire.com/15-greatest-animated-superhero-shows-ever-made-ranked/"
+8. Using classList, ADD both the "background" and "text-color" classes to the h1 (NOTE: You can use the h1 variable you created earlier)
+9. Using classList, REMOVE the "background" class from the h1 (NOTE: You can use the h1 variable you created earlier)
+10a. Using createElement, create an h4 element and set it to a const variable called h4
+10b. Using innerText add the following text "Is Avatar: The Last Airbender A Superhero Show?"
+10c. Using prepend, add the h4 to the start of the webpage/document (NOTE: You need to select the body element before you do this)
+11a. Using createElement, create an h5 element and set it to a const variable called h5
+11b. Using innerText add the following text "Heroes in a half shell Turtle Power!"
+11c. Using insertAdjacentElement, add the h5 after the closing tag of the a tag (AKA After the closing tag for the link) on the webpage/document (NOTE: You can use the aTag variable you created earlier)
+12. Using remove, remove the "Superman" li (NOTE: You will need to select the li first)
+BONUS
+13a. Select all the divs and set them to a const variable called divs.
+13b. Using classList, TOGGLE the "background" class on for all the divs (NOTE: You will need a loop to do this)
+14a. Create an array called avengers with the following string values "Forever", "Fight", "As", "One", "AVENGERS", "ASSEMBLE!"
+14b. Using a loop, add each item from the avengers array as span elements/tags to the bottom of the document/webpage
+When finished, create a repository in the “DOMBasicsExercise” Folder as well as on GitHub. Add and commit everything in the DOMBasicsExercise folder and push it up to your GitHub repository. Then paste the link to your GitHub repository page in the form:
+     https://forms.gle/P1XoXq8CpQEDt86SA
